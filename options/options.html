@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurações - Nextcloud Notes</title>
+    <link rel="stylesheet" href="options.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="../icons/favicon.svg" alt="Nextcloud Logo" class="logo">
+            <h1>Configurar Nextcloud Notes</h1>
+        </header>
+
+        <form id="settings-form">
+            <div class="form-group">
+                <label for="nextcloud-url">URL do seu Nextcloud:</label>
+                <input type="url" id="nextcloud-url" placeholder="https://seu-nextcloud.com" required>
+                <small>Basta inserir o link principal. Nós adicionamos o "/apps/notes/" para você automaticamente!</small>
+            </div>
+
+            <button type="submit" class="btn">Salvar Configuração</button>
+        </form>
+
+        <div id="status-message" class="hidden"></div>
+    </div>
+
+    <script src="options.js"></script>
+</body>
+</html>
